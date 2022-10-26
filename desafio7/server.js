@@ -9,7 +9,6 @@ app.use(morgan('dev'))
 app.use("/api/productos", productosRouter);
 app.use("/api/carrito", carritoRouter);
 
-// Si saco esto tira un error de view engine, no se por que!
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
