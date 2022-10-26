@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Celulares</title>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/main.js" defer></script>
+</head>
+<nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand me-5" href="/">Celulares</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link me-3" aria-current="page" href="/">Home</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<body>
+    <h1 class="text-center text-bg-dark p-3">Agregar Celulares</h1>
+    <form onsubmit="agregarProducto(this)" style="width: 70%;" class="m-auto mt-5">
+        <div class="mb-3">
+            <input class="form-control" type="text" id="nombre" placeholder="Nombre del producto" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="number" id="precio" placeholder="Precio" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="text" id="url" placeholder="URL" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="submit" value="Enviar" class="">
+        </div>
+    </form>
+    <div id="productos"></div>
+
+    <h1 class="text-center text-bg-dark p-3">Escribinos</h1>
+    <form onsubmit="agregarMensaje(this)" style="width: 70%;" class="m-auto mt-5">
+        <div class="mb-3">
+            <input class="form-control" type="email" id="email" placeholder="Ingresá tu email" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="text" id="texto" placeholder="Ingresa un comentario" required>
+        </div>
+        <div class="mb-3">
+            <input class="form-control" type="submit" value="Enviar">
+        </div>
+
+    </form>
+    <div id="mensajes"></div>
+
+    <div class="text-center">
+        <div>
+            <p>Alex Lucana</p>
+            <p>2022</p>
+        </div>
+    </div>
+</body>
+
+</html>

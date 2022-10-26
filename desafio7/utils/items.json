@@ -1,0 +1,67 @@
+[{
+        "store": "Apple",
+        "name": "Iphone 12",
+        "code": "1",
+        "stock": "18",
+        "description": "Celular",
+        "price": "2000",
+        "url": "https://http2.mlstatic.com/D_NQ_NP_2X_740855-MLA45719698644_042021-F.webp",
+        "id": 1,
+        "timestamp": 1666215640963
+    },
+    {
+        "store": "Apple",
+        "name": "Iphone 11",
+        "code": "2",
+        "stock": "20",
+        "description": "Celular",
+        "price": "1800",
+        "url": "https://http2.mlstatic.com/D_NQ_NP_2X_865864-MLA46114990464_052021-F.webp",
+        "id": 2,
+        "timestamp": 1666217388490
+    },
+    {
+        "store": "Samsung",
+        "name": "S20",
+        "code": "3",
+        "stock": "20",
+        "description": "Celular",
+        "price": "2200",
+        "url": "https://http2.mlstatic.com/D_NQ_NP_2X_646801-MLA48135575008_112021-F.webp",
+        "id": 3,
+        "timestamp": 1666217434876
+    },
+    {
+        "store": "Motorola",
+        "name": "G200",
+        "code": "1",
+        "stock": "20",
+        "description": "Celular",
+        "price": "999",
+        "url": "https://http2.mlstatic.com/D_NQ_NP_2X_861432-MLA52131254230_102022-F.webp",
+        "id": 4,
+        "timestamp": 1666266288877
+    },
+    {
+        "store": "Alcatel",
+        "name": "3h Plus",
+        "code": "2",
+        "stock": "20",
+        "description": "Celular",
+        "price": "1199",
+        "url": "https://http2.mlstatic.com/D_NQ_NP_2X_711569-MLA50584975686_072022-F.webp",
+        "id": 5,
+        "timestamp": 1666266322336
+    },
+    {
+        "store": "Motorola",
+        "name": "G51",
+        "code": "3",
+        "stock": "20",
+        "description": "Celular",
+        "price": "1299",
+        "url": "https://http2.mlstatic.com/D_NQ_NP_2X_959500-MLA50302263673_062022-F.webp",
+        "id": 6,
+        "timestamp": 1666266358473
+    }
+]

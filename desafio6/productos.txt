@@ -1,0 +1,19 @@
+[{
+        "title": "Celular Alcatel",
+        "price": 150,
+        "thumbnail": "https://images.fravega.com/f300/2cdada1e63fc436fdf4d330cc6a9da02.jpg.webp",
+        "id": 1
+    },
+    {
+        "title": "Celular Nokia",
+        "price": 10,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_822663-MLA41813920064_052020-F.webp",
+        "id": 4
+    },
+    {
+        "title": "Celular Motorola",
+        "price": 10000,
+        "thumbnail": "https://http2.mlstatic.com/D_NQ_NP_2X_664542-MLA50501125564_062022-F.webp",
+        "id": 6
+    }
+]
