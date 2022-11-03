@@ -1,0 +1,218 @@
+=> mongosh
+
+=> show dbs
+
+=> use ecommerce
+
+switched to db ecommerce
+
+=> db 
+
+ecommerce
+
+=> db.products.insertMany([{name: 'p1', description: 'd1', code: 11, pic: 'pic1', price: 100, stock: 100}, {name: 'p2', description: 'd2', code: 22, pic: 'pic2', price: 200, stock: 200}, {name: 'p3', description: 'd3', code: 33, pic: 'pic3', price: 300, stock: 300}, {name: 'p4', description: 'd4', code: 44, pic: 'pic4', price: 400, stock: 400}, {name: 'p5', description: 'd5', code: 55, pic: 'pic5', price: 500, stock: 500}, {name: 'p6', description: 'd6', code: 66, pic: 'pic6', price: 600, stock: 600}, {name: 'p7', description: 'd7', code: 77, pic: 'pic7', price: 700, stock: 700}, {name: 'p8', description: 'd8', code: 88, pic: 'pic8', price: 800, stock: 800}, {name: 'p9', description: 'd9', code: 99, pic: 'pic9', price: 900, stock: 900}, {name: 'p10', description: 'd10', code: 101, pic: 'pic10', price: 1000, stock: 1000}])
+
+=> db.products.find()
+
+[
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3af"),
+    name: 'p1',
+    description: 'd1',
+    code: 11,
+    pic: 'pic1',
+    price: 100,
+    stock: 100
+  },
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3b0"),
+    name: 'p2',
+    description: 'd2',
+    code: 22,
+    pic: 'pic2',
+    price: 200,
+    stock: 200
+  },
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3b1"),
+    name: 'p3',
+    description: 'd3',
+    code: 33,
+    pic: 'pic3',
+    price: 300,
+    stock: 300
+  },
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3b2"),
+    name: 'p4',
+    description: 'd4',
+    code: 44,
+    pic: 'pic4',
+    price: 400,
+    stock: 400
+  },
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3b3"),
+    name: 'p5',
+    description: 'd5',
+    code: 55,
+    pic: 'pic5',
+    price: 500,
+    stock: 500
+  },
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3b4"),
+    name: 'p6',
+    description: 'd6',
+    code: 66,
+    pic: 'pic6',
+    price: 600,
+    stock: 600
+  },
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3b5"),
+    name: 'p7',
+    description: 'd7',
+    code: 77,
+    pic: 'pic7',
+    price: 700,
+    stock: 700
+  },
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3b6"),
+    name: 'p8',
+    description: 'd8',
+    code: 88,
+    pic: 'pic8',
+    price: 800,
+    stock: 800
+  },
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3b7"),
+    name: 'p9',
+    description: 'd9',
+    code: 99,
+    pic: 'pic9',
+    price: 900,
+    stock: 900
+  },
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3b8"),
+    name: 'p10',
+    description: 'd10',
+    code: 101,
+    pic: 'pic10',
+    price: 1000,
+    stock: 1000
+  }
+]
+
+=> db.messages.insertMany([{email: 'email1@email.com', message: 'Hola1', date: 'date1'}, {email: 'email2@email.com', message: 'Hola2', date: 'date2'}, {email: 'email3@email.com', message: 'Hola3', date: 'date3'}, {email: 'email4@email.com', message: 'Hola4', date: 'date4'}, {email: 'email5@email.com', message: 'Hola5', date: 'date5'}, {email: 'email6@email.com', message: 'Hola6', date: 'date6'}, {email: 'email7@email.com', message: 'Hola7', date: 'date7'}, {email: 'email8@email.com', message: 'Hola8', date: 'date8'}, {email: 'email9@email.com', message: 'Hola9', date: 'date9'}, {email: 'email10@email.com', message: 'Hola10', date: 'date10'}])
+
+=> db.messages.find()
+
+[
+  {
+    _id: ObjectId("635bd6480f463b1ce171d3b9"),
+    email: 'email1@email.com',
+    message: 'Hola1',
+    date: 'date1'
+  },
+  {
+    _id: ObjectId("635bd6480f463b1ce171d3ba"),
+    email: 'email2@email.com',
+    message: 'Hola2',
+    date: 'date2'
+  },
+  {
+    _id: ObjectId("635bd6480f463b1ce171d3bb"),
+    email: 'email3@email.com',
+    message: 'Hola3',
+    date: 'date3'
+  },
+  {
+    _id: ObjectId("635bd6480f463b1ce171d3bc"),
+    email: 'email4@email.com',
+    message: 'Hola4',
+    date: 'date4'
+  },
+  {
+    _id: ObjectId("635bd6480f463b1ce171d3bd"),
+    email: 'email5@email.com',
+    message: 'Hola5',
+    date: 'date5'
+  },
+  {
+    _id: ObjectId("635bd6480f463b1ce171d3be"),
+    email: 'email6@email.com',
+    message: 'Hola6',
+    date: 'date6'
+  },
+  {
+    _id: ObjectId("635bd6480f463b1ce171d3bf"),
+    email: 'email7@email.com',
+    message: 'Hola7',
+    date: 'date7'
+  },
+  {
+    _id: ObjectId("635bd6480f463b1ce171d3c0"),
+    email: 'email8@email.com',
+    message: 'Hola8',
+    date: 'date8'
+  },
+  {
+    _id: ObjectId("635bd6480f463b1ce171d3c1"),
+    email: 'email9@email.com',
+    message: 'Hola9',
+    date: 'date9'
+  },
+  {
+    _id: ObjectId("635bd6480f463b1ce171d3c2"),
+    email: 'email10@email.com',
+    message: 'Hola10',
+    date: 'date10'
+  }
+]
+
+=> db.products.estimatedDocumentCount()
+
+10
+
+=> db.messages.estimatedDocumentCount()
+
+10
+
+=> db.products.insertOne({name: 'p11', description: 'd11', code: 11, pic: 'pic11', price: 1100, stock: 1100})
+
+{
+  acknowledged: true,
+  insertedId: ObjectId("635bd7190f463b1ce171d3c3")
+}
+
+=> db.products.find({name: 'p8'})
+
+[
+  {
+    _id: ObjectId("635bd5de0f463b1ce171d3b6"),
+    name: 'p8',
+    description: 'd8',
+    code: 88,
+    pic: 'pic8',
+    price: 800,
+    stock: 800
+  }
+]
+
+=> db.products.find({price: {$lt: 1000}})
+
+=> db.products.find({$and: [{price: {$gte: 1000}},{price: {$lte: 3000}}]})
+
+=> db.products.find().sort({price: 1}).limit(1).skip(2)
+
+=> db.products.updateMany({}, {$set: {stock: 100}}, {upsert: true})
+
+=> db.products.updateMany({price: {$gt: 4000}}, {$set: {stock: 0}})
+
+=> db.products.deleteMany({price: {$lt: 1000}})
+
+=> db.createUser({user: 'pepe', pwd: 'asd456', roles: [{role: 'read', db: 'ecommerce'}]})
