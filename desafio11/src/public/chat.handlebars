@@ -1,0 +1,35 @@
+<div class="container">
+  <div class="p-2 bg-primary rounded-lg my-1">
+    <h3  class="text-white">Chat 🤳 <span id="compression">(Compresión)</span></h3>
+  </div>
+  <div class="bg-light" id="chat">
+    <div class="content d-flex flex-column" id="chat-content">
+
+    </div>
+    <form class="tools d-flex">
+      <div class="column d-flex flex-column col-12 p-0 mx-2 my-1">
+        <input id="email" class="form-control col-md-12 col-lg-12 my-1" type="text" name=""
+          placeholder="Ingresa tu email">
+        <input id="names" class="form-control col-md-12 col-lg-12 my-1" type="text" name=""
+          placeholder="Ingresa tu nombre">
+        <input id="lastname" class="form-control col-md-12 col-lg-12 my-1" type="text" name=""
+          placeholder="Ingresa tu apellido">
+        <input id="age" class="form-control col-md-12 col-lg-12 my-1" type="text" name=""
+          placeholder="Ingresa tu edad">
+        <input id="alias" class="form-control col-md-12 col-lg-12 my-1" type="text" name=""
+          placeholder="Ingresa tu alias">
+        <input id="message" class="form-control col-md-12 col-lg-12 my-1" type="text" name=""
+          placeholder="Escribe tu mensaje">
+          <div class="emoji-list" id="emoji-list">
+          </div>
+          <button id="emoji" class="form-control col-12 py-8 my-1 btn-warning text-brown" type="button" name=""
+            placeholder="From">
+            <i class="far fa-grin-alt"></i>
+          </button>
+          <button onclick="sendMessage()" class=" col-12 btn btn-primary btn-send" type="button">
+            <i class="far fa-paper-plane"></i>
+          </button>
+      </div>
+    </form>
+  </div>
+</div>

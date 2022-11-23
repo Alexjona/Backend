@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+  <script src="https://unpkg.com/dayjs@1.8.21/locale/zh-cn.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/normalizr@3.6.1/dist/normalizr.browser.min.js"></script>
+  <title>ecommerce</title>
+</head>
+
+<body class="d-flex">
+  <div class="container d-flex">
+    <div class="row justify-content-md-center">
+      <div class="col col-sm-12 col-md-12 col-lg-6 mt-5">
+        <div class="d-flex justify-content-center py-0 my-0">
+          <h1>Ecommerce</h1>
+        </div>
+        <hr class="py-0 my-0">
+        <form class="m-4">
+          <div class="form-group">
+            <label for="Nombre Producto">Nombre</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+          </div>
+          <div class="form-group">
+            <label for="Precio Producto">Precio</label>
+            <input type="number" class="form-control" id="price" name="price" required>
+          </div>
+          <div class="form-group">
+            <label for="url">Link</label>
+            <input type="text" class="form-control" id="url" name="url" required>
+          </div>
+          <div class="d-flex flex-column justify-content-center align-items-center mt-5">
+            <button id="btn-save" type="button" class="btn btn-primary btn-md mx-4 my-2 w-50">Guardar</button>
+          </div>
+        </form>
+      </div>
+      <div id="hbs-chat" class="col col-sm-12 col-md-12 col-lg-5  offset-lg-1 mt-5"></div>
+      <div id="hbs-products" class="col col-sm-12 col-md-12 col-lg-12 mt-5"></div>
+    </div>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/chat.js"></script>
+</body>
+
+</html>
